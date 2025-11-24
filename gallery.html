@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+  <div class="container ">
+      <a class="navbar-brand text" href="#">My Favorite Cars</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item "><a class="nav-link active text" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Car Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+      </div>
+  </div>
+</nav>
+
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Car Gallery</h2>
+  <div class="row g-4">
+
+    <!-- Card 1: Ferrari -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Ferrari">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Ferrari</h5>
+          <p class="card-text">Italian supercar legend — racing DNA & design.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#ferrariModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Lamborghini -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Lamborghini">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Lamborghini</h5>
+          <p class="card-text">Bold, aggressive supercars with dramatic styling.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#lamboModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Porsche -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=600" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Porsche 911">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Porsche 911</h5>
+          <p class="card-text">Timeless rear-engine sports car known for balance.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#porscheModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Ford Mustang -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Ford Mustang">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Ford Mustang</h5>
+          <p class="card-text">Iconic American pony car — performance & culture.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#mustangModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: Bugatti -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1566023888476-6f17e362fbb7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnVnYXR0aSUyMENoaXJvbnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Bugatti Chiron">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Bugatti Chiron</h5>
+          <p class="card-text">Hypercar: extreme power, record-setting performance.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#bugattiModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6: McLaren -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1523983303491-5a4ef866bb07?w=600" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="McLaren P1">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">McLaren P1</h5>
+          <p class="card-text">Hybrid hypercar from a Formula-1-bred company.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#mclarenModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7: Chevrolet Camaro -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=600" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Chevrolet Camaro">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Chevrolet Camaro</h5>
+          <p class="card-text">American muscle — bold design, powerful engines.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#camaroModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8: Tesla Model S -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGVzbGElMjBNb2RlbCUyMFN8ZW58MHx8MHx8fDA%3D" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Tesla Model S">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Tesla Model S</h5>
+          <p class="card-text">Electric luxury sedan that changed EV expectations.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#teslaModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 9: Audi R8 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=600" class="card-img-top"
+             style="height:200px; object-fit:cover;" alt="Audi R8">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Audi R8</h5>
+          <p class="card-text">Mid-engine supercar with quattro all-wheel drive.</p>
+          <button class="btn gradient-btn mt-auto" data-bs-toggle="modal" data-bs-target="#audiModal">Read More</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================= MODALS (detailed paragraphs) ================= -->
+
+<!-- Ferrari Modal -->
+<div class="modal fade" id="ferrariModal" tabindex="-1" aria-labelledby="ferrariModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ferrariModalLabel">Ferrari</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=1200" class="img-fluid mb-3" alt="Ferrari large">
+        <p><strong>Overview:</strong> Ferrari, founded by Enzo Ferrari and based in Maranello, Italy, is a brand synonymous with high-performance sports cars and a dominant racing heritage. Over decades Ferrari has balanced road-going supercars with a world-class motorsport program, creating a distinct identity of speed and luxury.</p>
+        <p><strong>Performance & engineering:</strong> Modern Ferrari road cars typically use high-revving V8 and V12 engines and advanced aerodynamics, carrying technologies derived from racing. Many models are capable of top speeds well above 300 km/h and combine lightweight construction with powerful drivetrains to deliver sharp handling and blistering acceleration.</p>
+        <p><strong>Design & why it matters:</strong> Ferrari’s styling—often in the classic Rosso Corsa—focuses on aerodynamic efficiency and emotional impact. Each model emphasizes driver engagement and bespoke craftsmanship, which is why Ferrari remains a cultural and automotive icon.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lamborghini Modal -->
+<div class="modal fade" id="lamboModal" tabindex="-1" aria-labelledby="lamboModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lamboModalLabel">Lamborghini</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1200" class="img-fluid mb-3" alt="Lamborghini large">
+        <p><strong>Overview:</strong> Automobili Lamborghini was founded in 1963 by Ferruccio Lamborghini with the intent to build refined grand touring cars that could rival the likes of Ferrari. Lamborghini made its name with bold, mid-engine designs (the Miura was revolutionary) and an emphasis on extreme performance and attention-grabbing styling.</p>
+        <p><strong>Performance & engineering:</strong> Lamborghinis have historically used large naturally aspirated V10 and V12 engines (and now hybridized layouts) to produce dramatic acceleration and top speeds. Recent models combine high power output with advanced chassis and aerodynamics to deliver a raw, visceral driving experience.</p>
+        <p><strong>Design & why it matters:</strong> Lamborghini’s design language is aggressive and angular—often likened to fighter jets—and includes signature elements like scissor doors on flagship models. The brand is prized for its theatrical presence and unrestrained approach to supercar design.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Porsche Modal -->
+<div class="modal fade" id="porscheModal" tabindex="-1" aria-labelledby="porscheModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="porscheModalLabel">Porsche 911</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=1200" class="img-fluid mb-3" alt="Porsche large">
+        <p><strong>Overview:</strong> The Porsche 911, introduced in 1964, is one of the longest-running sports car nameplates and is celebrated for its distinctive rear-engine layout. It has evolved through generations while retaining core characteristics that emphasize driver control and strong track capability.</p>
+        <p><strong>Performance & engineering:</strong> 911 variants range from comfortable grand tourers to hardcore track machines; engines are typically horizontally-opposed (“flat-6”) units, and Porsche continually refines suspension, electronics, and aerodynamics to improve handling and lap times.</p>
+        <p><strong>Design & why it matters:</strong> Porsche’s design philosophy balances function and timeless aesthetics: simple, purposeful lines and driver-focused ergonomics. The 911 is prized for its versatility — a car that can be driven daily and perform exceptionally at the racetrack.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ford Mustang Modal -->
+<div class="modal fade" id="mustangModal" tabindex="-1" aria-labelledby="mustangModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mustangModalLabel">Ford Mustang</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1200" class="img-fluid mb-3" alt="Mustang large">
+        <p><strong>Overview:</strong> Launched in 1964, the Ford Mustang created the “pony car” segment: sporty, affordable coupes with long hoods and short decks. Across generations the Mustang has been central to American car culture.</p>
+        <p><strong>Performance & engineering:</strong> While early Mustangs featured a range of inline-6 and V8 engines, modern Mustangs offer turbocharged 4-cylinder EcoBoost variants and high-power V8s in GT and special trims. Today’s performance Mustangs marry modern chassis tuning with powerful engines for impressive straight-line speed and improved handling.</p>
+        <p><strong>Design & why it matters:</strong> The Mustang’s silhouette is instantly recognizable; its blend of performance and accessibility made it a cultural icon, frequently appearing in films, music, and motorsport.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bugatti Chiron Modal -->
+<div class="modal fade" id="bugattiModal" tabindex="-1" aria-labelledby="bugattiModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bugattiModalLabel">Bugatti Chiron</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1566023888476-6f17e362fbb7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnVnYXR0aSUyMENoaXJvbnxlbnwwfHwwfHx8MA%3D%3D?w=1200" class="img-fluid mb-3" alt="Bugatti large">
+        <p><strong>Overview:</strong> The Bugatti Chiron is a modern hypercar built by Bugatti Automobiles (Molsheim, France) as the successor to the Veyron. It is a halo vehicle intended to push boundaries in speed and engineering.</p>
+        <p><strong>Performance & engineering:</strong> The Chiron uses a heavily updated quad-turbocharged W16 engine and manufacturer figures place its 0–100 km/h time around 2.4 seconds; special variants have pushed top speeds and set performance records in controlled tests.</p>
+        <p><strong>Design & why it matters:</strong> With extensive carbon fiber construction, advanced aerodynamics and bespoke craftsmanship, the Chiron blends opulence and extreme performance — it’s a statement of what is technically achievable at the top end of automotive engineering.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- McLaren P1 Modal -->
+<div class="modal fade" id="mclarenModal" tabindex="-1" aria-labelledby="mclarenModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mclarenModalLabel">McLaren P1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1523983303491-5a4ef866bb07?w=1200" class="img-fluid mb-3" alt="McLaren large">
+        <p><strong>Overview:</strong> The McLaren P1 is a limited-production hybrid hypercar produced by McLaren Automotive (2013–2015) and part of McLaren’s Ultimate Series following the F1. It showcased hybrid propulsion tuned for performance rather than efficiency alone.</p>
+        <p><strong>Performance & engineering:</strong> The P1 pairs a twin-turbo V8 with an electric motor to deliver an extremely high combined output, lightning acceleration and advanced energy recovery systems. Its carbon fiber monocoque and track-oriented aerodynamics emphasize lap time performance.</p>
+        <p><strong>Design & why it matters:</strong> The P1’s design is functional and futuristic, with butterfly doors, extensive aero components and a driver-first cockpit. It represented a major step toward electrified performance in supercars.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chevrolet Camaro Modal -->
+<div class="modal fade" id="camaroModal" tabindex="-1" aria-labelledby="camaroModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="camaroModalLabel">Chevrolet Camaro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=1200" class="img-fluid mb-3" alt="Camaro large">
+        <p><strong>Overview:</strong> The Chevrolet Camaro debuted in 1966 as GM’s answer to the Ford Mustang. Over multiple generations the Camaro has mixed daily-drive comfort with high-performance variants aimed at track use.</p>
+        <p><strong>Performance & engineering:</strong> Modern Camaro trims span from efficient turbocharged engines to high-output V8s (including track-focused ZL1 models). The Camaro has evolved its chassis and braking systems to improve handling while preserving its muscle-car character.</p>
+        <p><strong>Design & why it matters:</strong> Camaros are known for their aggressive fronts and muscular proportions. They represent an ongoing rivalry in American performance culture and remain a popular choice for performance enthusiasts.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tesla Model S Modal -->
+<div class="modal fade" id="teslaModal" tabindex="-1" aria-labelledby="teslaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="teslaModalLabel">Tesla Model S</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGVzbGElMjBNb2RlbCUyMFN8ZW58MHx8MHx8fDA%3D?w=1200" class="img-fluid mb-3" alt="Tesla large">
+        <p><strong>Overview:</strong> The Tesla Model S is a battery-electric luxury sedan introduced in 2012 that helped reshape expectations for electric vehicles by combining long range, strong performance and advanced software features.</p>
+        <p><strong>Performance & engineering:</strong> Different Model S variants use dual- and tri-motor layouts; high-performance versions (Plaid) deliver extremely fast acceleration while Long Range variants focus on maximizing driving range. The Model S popularized electric range and software-driven features in the EV segment.</p>
+        <p><strong>Design & why it matters:</strong> With a low drag coefficient, aluminum construction and an interior centered on a large touchscreen, the Model S emphasizes efficiency, technology and a minimalist luxury approach — influencing many competing EVs that followed.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Audi R8 Modal -->
+<div class="modal fade" id="audiModal" tabindex="-1" aria-labelledby="audiModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="audiModalLabel">Audi R8</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=1200" class="img-fluid mb-3" alt="Audi R8 large">
+        <p><strong>Overview:</strong> The Audi R8 is a mid-engine sports car developed by Audi Sport (quattro GmbH). Introduced in 2006, the R8 brought exotic mid-engine performance together with Audi’s quattro technology and everyday usability.</p>
+        <p><strong>Performance & engineering:</strong> R8 variants typically use naturally aspirated or turbocharged V10 engines and feature a lightweight space-frame construction. Quattro AWD and precise chassis tuning permit confident handling and strong acceleration.</p>
+        <p><strong>Design & why it matters:</strong> The R8’s clean lines, prominent sideblade, and refined interior gave buyers supercar performance with Audi refinement — making it an accessible exotic for many enthusiasts.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 mt-4">
+  <p>© 2025 My Favorite Cars</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
